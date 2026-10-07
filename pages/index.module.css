@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "ColfaxAI";
+  src:
+    url(https://cdn.openai.com/API/fonts/ColfaxAIRegular.woff2) format("woff2"),
+    url(https://cdn.openai.com/API/fonts/ColfaxAIRegular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ColfaxAI";
+  src:
+    url(https://cdn.openai.com/API/fonts/ColfaxAIBold.woff2) format("woff2"),
+    url(https://cdn.openai.com/API/fonts/ColfaxAIBold.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8e8ff, #e8f0ff);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px;
+}
+
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heading1 {
+  text-align: center;
+  color: #6a0dad;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #4b3263;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.chatContainer {
+  height: 450px;
+  overflow-y: auto;
+  background-color: white;
+  border: 3px solid #c77dff;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(106, 13, 173, 0.15);
+}
+
+.userMessage {
+  background-color: #7b2cbf;
+  color: white;
+  padding: 12px 15px;
+  border-radius: 15px;
+  margin: 10px 0 10px auto;
+  max-width: 70%;
+  text-align: right;
+}
+
+.assistantMessage {
+  background-color: #f1d7ff;
+  color: #2d143d;
+  padding: 12px 15px;
+  border-radius: 15px;
+  margin: 10px auto 10px 0;
+  max-width: 70%;
+}
+
+.messageInputContainer {
+  margin-top: 20px;
+}
+
+.textarea {
+  width: 100%;
+  min-height: 90px;
+  padding: 15px;
+  border: 2px solid #c77dff;
+  border-radius: 12px;
+  font-size: 16px;
+  resize: vertical;
+  outline: none;
+}
+
+.textarea:focus {
+  border-color: #7b2cbf;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.inputSubmit,
+.inputButton {
+  background-color: #7b2cbf;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.inputSubmit:hover,
+.inputButton:hover {
+  background-color: #5a189a;
+}
